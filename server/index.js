@@ -4,9 +4,9 @@ const app = express();
 const path = require('path');
 
 
-app.get('/', (req, res) => {
+/* app.get('/', (req, res) => {
     res.send('Hola Mundo');
-});
+}); */
 
 // Hacer que node sirva los archivos de nuestro app React
 app.use(express.static(path.resolve(__dirname, '../client/build')));
